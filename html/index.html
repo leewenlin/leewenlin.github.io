@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<title></title>
+<style type="text/css" >
+body{
+	font-family:"宋体";
+	}
+.content{
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 800px;
+	margin: 100px ;
+}
+	.meidui{
+		width:400px;
+		height: 400px;
+		border-radius: 250px;
+		background-color:#fff;
+		background-image: -webkit-gradient(radial, center center, 0, center center, 200, 
+			color-stop(0.6, #000),
+			color-stop(0.74, rgb(250,47,47)),
+			color-stop(0.76, rgb(185,150,150)),
+			color-stop(0.78, #ccc),
+			color-stop(0.79, #fff),
+			color-stop(0.93, #eee),
+			color-stop(0.95, #fff),
+			color-stop(0.97, #999),
+			color-stop(0.98, rgb(210,60,60)),
+			color-stop(1, red)
+
+
+			);
+		border: 50px solid rgb(250,47,47);
+		-webkit-box-shadow:inset -20px -30px 160px rgba(0,0,0,0.2);
+		position: relative;
+	}
+	.meidui::before{
+		content: "";
+		background-color: blue;
+		background-image: -webkit-gradient(radial, center center, 0, center center, 100, 
+			color-stop(0.0, rgb(2,3,155)),
+			color-stop(0.65, rgb(2,3,155)),
+			color-stop(0.91, rgb(5,5,208)),
+			color-stop(0.92, rgb(0,0,255)),
+			color-stop(0.94, rgb(0,0,255)),
+			color-stop(0.95, rgb(5,5,208)),
+			color-stop(0.98, rgb(80,80,0)),
+			color-stop(1, rgb(250,47,47))
+			);
+		top:50px;
+		left:50px;
+		width: 200px;
+		height: 200px;
+		border-radius: 150px;
+		border:50px solid rgb(250,47,47);
+		position: absolute;
+		-webkit-box-shadow:inset -20px -20px 80px rgba(0,0,0,0.4);
+
+	}
+	.meidui::after{
+		content: "★";
+		font-size: 202px;
+		width: 200px;
+		top:76px;
+		left: 100px;
+		position: absolute;
+		color:rgba(255,255,255,0.8) ;
+		background-image: -webkit-gradient(radial, center center, 0, center center, 100, 
+			color-stop(0.0, #fff),
+			color-stop(0.6, #eee),
+			color-stop(1, #ccc));
+     	-webkit-background-clip: text;
+     	-webkit-text-fill-color: rgba(255,255,255,0.9);
+		text-shadow:0px 0px 20px rgba(0,0,0,0.3),0px 0px 2px rgba(0,0,0,0.5),-1px -1px 5px rgba(255,255,0,0.5),1px 1px 10px rgba(0,0,0,0.7),1px 1px 10px rgba(255,255,255,0.6);
+	}
+
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="meidui"/>
+</div>
+</body>
+</html>
