@@ -28,10 +28,7 @@ body{
 	top:20%;
 	width:400px;
 	height: 350px;
-	border-top-left-radius: 200px;
-	border-top-right-radius: 200px;
-	border-bottom-left-radius: 200px;
-	border-bottom-right-radius: 200px;
+	border-radius: 200px;
 	background-color: white;
 	position: relative;
 
@@ -46,12 +43,15 @@ body{
 }
 
 #panda::before{
-	left: 0;
-content:"● ●";
-font-size:160px;
+	left: -30px;
+content:"●●";
+letter-spacing: 60px;
+text-overflow: clip;
+font-size:200px;
 z-index: -99;
 color:#000;
-top:-100px;
+top:-80px;
+width: 460px;
 position: absolute;
 }
 #panda::after{
