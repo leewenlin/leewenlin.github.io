@@ -6,48 +6,47 @@
 <style type="text/css" >
 body{
 	background-color: #8fbab6;
-	font-family: "微软雅黑";
+	font-family: "微软雅黑",arial;
 	text-align: center;
 	vertical-align: middle;
 	
 }
 ul{
-	list-style-type: none;
-	overflow:hidden;
 	margin: 0px;
+	list-style-type: none;
 }
 .content{
 	margin: 50px auto;
 	width: 1000px;
 	min-height: 500px;
 	position: relative;
+	
 }
 .content>ul>li{
 	color: #8fbab6;
 	min-width: 100px;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 60px 0 60px 0;
 	background-color: #ebede1;
 	float: left;
-	font-size: 20px;
+	font-size: 16px;
 }
 .content>ul :nth-of-type(2n+1){
 	border-radius: 0 60px 0 60px;
-	margin-left: 10px;
 }
 .content>ul>li:hover{
 	background-color: #646760;
 }
 .content>ul>li:before{
-	margin: -60px 0 0 -80px;
+	margin: -40px 0 0 -50px;
 	position: absolute;
-	font-size: 80px;
+	font-size: 60px;
 	content: "❀";
 }
 .content>ul>li:after{
-	margin: 0px 0 0 -90px;
+	margin: -10px 0 0 10px;
 	position: absolute;
-	font-size: 80px;
+	font-size: 50px;
 	content: "❀";
 }
 .main:before{
@@ -61,11 +60,19 @@ ul{
 	min-height: 300px;
 	background-color: #b1c0bc;
 	border: 10px solid #ebede1;
-	margin: 0 auto;
 	position: absolute;
 	color: #ebede1;
-	font-size: 50px;
-	border-radius: 0 20px 0 20px;
+	font-size: 14px;
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 20px;
+}
+.main>ul{
+	text-align: left;
+	list-style: circle inside;
+}
+.main a{
+	text-decoration: blink;
+	color: #ebede1;
 }
 </style>
 <body>
@@ -83,12 +90,18 @@ ul{
 <li>
 关于我
 </li>
+<div style="clear:both"></div>
 </ul>
 <div class="main">
-	<p>
-		我还没想好放什么。<br>
-		让我再思考一下=  =
-	</p>
+		<ul>
+		CSS绘图
+			<li>
+				<a href="./html/index.html" target="_blank">美队盾牌</a>
+			</li>
+			<li>
+				<a href="./html/panda.html" target="_blank">panda</a>
+			</li>
+		</ul>
 </div>
 </div> 
 </body>
