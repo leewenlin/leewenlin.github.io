@@ -4,57 +4,72 @@
 <meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8"/>
 <meta name="baidu-site-verification" content="lnqiNjoNrY" />
 <title>Panda的小黑屋</title>
+<link rel="stylesheet" href="./css/common.css">
 <style type="text/css" >
 body{
 	background-color: #8fbab6;
-	font-family: "微软雅黑",arial;
+	font-family: "Microsoft Yahei",arial;
 	text-align: center;
 	vertical-align: middle;
-	
 }
 ul{
+	padding: 0px;
 	margin: 0px;
 	list-style-type: none;
 }
 .content{
-	margin: 50px auto;
+	margin: 100px auto;
 	width: 1000px;
-	min-height: 500px;
 	position: relative;
-	
 }
-.content>ul>li{
+.head{
+	position: absolute;
+	bottom: 0px;
+	width: 1000px;
+}
+.head>ul>li{
+	margin: 0px;
+	vertical-align: middle;
 	color: #8fbab6;
-	min-width: 100px;
-	padding: 10px;
+	min-width: 120px;
+	padding: 0px 15px;
 	border-radius: 60px 0 60px 0;
 	background-color: #ebede1;
-	float: left;
+	display: inline-block;
 	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
 }
-.content>ul :nth-of-type(2n+1){
+.head>ul>:nth-of-type(2n+1){
+	transform-origin:right bottom;
 	border-radius: 0 60px 0 60px;
 }
-.content>ul>li:hover{
+.head>ul>:nth-of-type(2n){
+	transform-origin:left bottom;
+}
+.head>ul>li:hover{
 	background-color: #646760;
+	-webkit-animation-name: swing;
+	animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
 }
-.content>ul>li:before{
-	margin: -40px 0 0 -50px;
-	position: absolute;
-	font-size: 60px;
+
+.head>ul>li:before{
+	color: #b1c0bc;
+	/*margin: -40px 0 0 -50px;
+	position: absolute;*/
+	font-size: 36px;
 	content: "❀";
 }
-.content>ul>li:after{
-	margin: -10px 0 0 10px;
-	position: absolute;
-	font-size: 50px;
+.head>ul>li:after{
+	color: #b1c0bc;
+	/*margin: -10px 0 0 10px;
+	position: absolute;*/
+	font-size: 36px;
 	content: "❀";
-}
-.main:before{
-	position: absolute;
-	font-size: 80px;
-
-
 }
 .main{
 	width: 100%;
@@ -67,13 +82,23 @@ ul{
 	border-radius: 20px 20px 20px 20px;
 	padding-top: 20px;
 }
-.main>ul{
-	text-align: left;
-	list-style: circle inside;
+.head>ul>li>ul{
+	position: absolute;
+	top: 40px;
+	
+	display: none;
 }
-.main a{
-	text-decoration: blink;
-	color: #ebede1;
+.head>ul>li:hover>ul{
+	display:block;
+	
+}
+.head>ul>li>ul>li{
+	border-radius: 10px;
+	width: 100px;
+	background:  #ebede1;
+}
+.head>ul>li>ul>li:hover{
+	background-color: #646760;
 }
 .logo{
 	background: url("./img/panda.png") no-repeat;
@@ -83,40 +108,62 @@ ul{
 	border-radius: 100px;
 	height: 200px;
 	width: 200px;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;	/* Firefox */
-	-webkit-box-sizing:border-box;	/* Safari */
+	vertical-align:middle;
 }
+.logo:hover{
+	-webkit-animation-name: beat;
+	animation-name: beat;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+	-webkit-animation-iteration-count:infinite;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;	
+}
+a{
+	text-decoration:none;
+	color: #8fbab6;
+}
+
+h1{
+	display: inline;
+	color: #ebede1;
+}
+
+
 </style>
+
 <body>
-<NAV><img class="logo"/>Panda的小黑屋</NAV>
 <div class="content">
-<ul>
-<li>
-首页
-</li>
-<li>
-博客
-</li>
-<li>
-作品集
-</li>
-<li>
-关于我
-</li>
-<div style="clear:both"></div>
-</ul>
-<div class="main">
-		<ul>
-		CSS绘图
-			<li>
-				<a href="./html/index.html" target="_blank">美队盾牌</a>
-			</li>
-			<li>
-				<a href="./html/panda.html" target="_blank">panda</a>
-			</li>
-		</ul>
-</div>
+	<div class="main">
+		<img class="logo"/><h1>Panda的小黑屋</h1>
+		<div class="head">
+			<ul >
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="./blog/" target="_blank">博客</a>
+				</li>
+				<li>其他
+					<ul>
+						<li><a href="./html/index.html" target="_blank">美队盾牌</a></li>
+						<li><a href="./html/panda.html" target="_blank">panda</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="./blog/about" target="_blank">关于我</a>
+				</li>
+				<div style="clear:both"></div>
+			</ul>
+		</div>
+	</div>
 </div> 
 </body>
 </html>
