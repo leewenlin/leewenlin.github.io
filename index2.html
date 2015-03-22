@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=medium-dpi">
 <meta name="baidu-site-verification" content="lnqiNjoNrY" />
 <title>Panda的小黑屋</title>
 <link rel="stylesheet" href="./css/common.css">
@@ -29,6 +30,7 @@ html{
 	padding-bottom: 40px;
 }
 .main-section{
+	padding-top: 40px;
 	background-color: #ebede1;
 	height: 60%;
 }
@@ -44,7 +46,14 @@ html{
 	}
 	section{
 		display: inline-block;
-		margin-left: 20px;
+		margin-left: 1rem;
+		max-width: 560px;
+	}
+	section~section{
+		margin-left: 2rem;
+	}
+	section>section{
+		width: 156px;
 	}
 }
 
@@ -55,9 +64,12 @@ html{
 		margin-right: 40px auto;
 		margin-left: 40px auto;
 	}
+	section{
+		display: inline-block;
+	}
 }
 
-@media handheld , screen and (max-width: 479px) {
+@media screen and (max-width: 479px) {
 	.main{
 		width: 100%;
 		text-align: center;
@@ -65,8 +77,23 @@ html{
 	.logo{
 		display: block;
 	}
+	section>section{
+		margin-left: 2rem;
+	}
 }
 
+section>section{
+	vertical-align: text-top;
+	text-align: left;
+	margin-top: 0.8rem;
+	word-wrap :break-word ;
+}
+
+section>section::before{
+	margin-left: -1.2rem;
+	position: absolute;
+	content: "❀";
+}
 
 .logo{
 	display: inline-block;
@@ -78,12 +105,12 @@ html{
 	height: 200px;
 	width: 200px;
 	vertical-align:middle;
-}
-.logo:hover{
-	-webkit-animation-name: beat;
-	animation-name: beat;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
+
+	transform-origin:middle center;
+	-webkit-animation-name: rotate;
+	animation-name: rotate;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
 	-webkit-animation-delay: 0s;
 	animation-delay: 0s;
 	-webkit-animation-iteration-count:infinite;
@@ -98,25 +125,27 @@ html{
 		<img class="logo"/>
 		<section>
 			<h1>panda的小黑屋</h1>
-			<p>程序媛一枚，ACG爱好者，手工爱好者</p>
-			<p>
-				<section>
-					
-				</section>
-				<section>
-					
-				</section>
-				<section>
-
-				</section>
-			</p>
+			<p>专业打怪兽，业余写代码。为了世界和平而战_(·ω·√∠)_____如果需要打怪兽，请联系leewenlin@leewenlin.com</p>
+			<section>
+				程序狗一只。两年需求，两年半java后台，下班之后搞前端。没事玩玩php和python。
+			</section>
+			<section>
+				ACG爱好者，大爱无双仙剑古剑，最近追的番是法芙娜。<span style="text-decoration:line-through">会画画</span>(太久不画技能丢失)，擅长PS后期。
+			</section>
+			<section>
+				DIY手工达人。纸粘土，蝴蝶结，编织，串珠，绕线。。。
+			</section>
 		</section>
 
 	</div>
 
 </div>
 <div class="main-section">
-
+	<div class="main">
+		<section class="">BLOG</section>
+		<section>手工墙</section>
+		<section>杂物堆</section>
+	</div>
 </div>
 
 

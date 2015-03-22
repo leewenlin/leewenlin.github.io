@@ -208,3 +208,42 @@
          -webkit-transform: scale(1.2);
       }
   }
+
+  @keyframes beat{
+      0%{
+        transform: scale(1);
+      }
+      50%{
+        transform: scale(1.2);
+      }
+  }
+
+  @-webkit-keyframes rotate{
+
+      0%{
+        -webkit-transform: rotateY(0deg);
+      }
+      50%{
+        background: url("/git/img/panda1.png") no-repeat;
+        background-size: 100%;
+        -webkit-transform: rotateY(180deg);
+      }
+      100%{
+        -webkit-transform: rotateY(360deg);
+      }
+  }
+
+  @keyframes rotate{
+
+      0%{
+        transform: rotateY(0deg)
+      }
+      50%{
+        background: url("/git/img/panda1.png") no-repeat;
+        background-size: 100%;
+        transform: rotateY(180deg)
+      }
+      100%{
+        transform: rotateY(360deg);
+      }
+  }
