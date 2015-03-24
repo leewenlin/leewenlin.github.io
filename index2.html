@@ -18,7 +18,9 @@ h1,h2{
 h3,h4,h5,h6{
 	color: #222;
 }
-
+a{
+	text-decoration: none;
+}
 html{
 	height:100%;
 }
@@ -40,7 +42,8 @@ html{
 .main-section{
 	padding-top: 40px;
 	background-color: #ebede1;
-	height: 60%;
+	min-height: 60%;
+	padding-bottom: 60px;
 }
 
 .main{
@@ -124,7 +127,49 @@ section>section::before{
 	-webkit-animation-iteration-count:infinite;
 	animation-iteration-count:infinite;
 }
-
+.sixangle{
+	width: 172px;
+	height: 200px;
+	margin-top: 20px;
+	margin-right: 20px;
+	display: inline-block;
+}
+.sixangle:nth-of-type(3){
+	margin-top: -33px;
+	margin-left: 96px;
+	display: block;
+}
+.sixangle>a>div:nth-child(1){
+	width:0px;
+	border-left:86px solid transparent;
+	border-right:86px solid transparent;
+	border-bottom:50px solid #b1c0bc;
+}
+.sixangle>a>div:nth-child(2){
+	width:172px;
+	height:100px;
+	background-color:#b1c0bc;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	line-height: 100px;
+	font-size: 2.5rem;
+}
+.sixangle>a>div:nth-child(3){
+	width:0px;
+	border-left:86px solid transparent;
+	border-right:86px solid transparent;
+	border-top:50px solid #b1c0bc;
+}
+.sixangle>a:hover>div:nth-child(1){
+	border-bottom-color:#646760;
+}
+.sixangle>a:hover>div:nth-child(2){
+	background-color: #646760;
+}
+.sixangle>a:hover>div:nth-child(3){
+	border-top-color:#646760;
+}
 </style>
 </head>
 <body>
@@ -150,9 +195,27 @@ section>section::before{
 </div>
 <div class="main-section">
 	<div class="main">
-		<section class="">BLOG</section>
-		<section>手工墙</section>
-		<section>杂物堆</section>
+
+	<div class="sixangle">
+	<a href="./blog">
+	<div></div>
+	<div>BLOG</div>
+	<div></div>
+	</a>
+	</div><div class="sixangle">
+	<a href="#">
+	<div></div>
+	<div>手工墙</div>
+	<div></div>
+	</a>
+	</div><div class="sixangle">
+	<a href="#">
+	<div></div>
+	<div>杂物堆</div>
+	<div></div>
+	</a>
+	</div>
+
 	</div>
 </div>
 
