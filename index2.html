@@ -116,8 +116,8 @@ section>section::before{
 	height: 200px;
 	width: 200px;
 	vertical-align:middle;
-
-	transform-origin:middle center;
+	-webkit-transform-origin:center center;
+	transform-origin:center center;
 	-webkit-animation-name: rotate;
 	animation-name: rotate;
 	-webkit-animation-duration: 2s;
@@ -128,47 +128,80 @@ section>section::before{
 	animation-iteration-count:infinite;
 }
 .sixangle{
-	width: 172px;
-	height: 200px;
-	margin-top: 20px;
-	margin-right: 20px;
+	width: 173px;
+	height: 100px;
 	display: inline-block;
+	background-color: #555;
+	background-size: 200px auto;
+	margin-top: 60px;
+	background-position:center;
+	margin-left: 10px; 
+	margin-right: 10px; 
+	margin-bottom: 50px;
 }
-.sixangle:nth-of-type(3){
-	margin-top: -33px;
-	margin-left: 96px;
+.sixangle:nth-child(1){
+	background-image: url("./img/zongshi.gif");
+}
+.sixangle:nth-child(2){
+	background-image: url("./img/diy.jpg");
+}
+.sixangle:nth-child(3){
+	background-image: url("./img/pandada.jpg");
+}
+.sixangle>div{
+	overflow: hidden;
+	background: inherit;
+	position: absolute;
+	width: 173px;
+	height: 100px;
+	transform-origin:center center;
+	-webkit-transform-origin:center center;
+	background:inherit;
+}
+
+.sixangle>div:nth-of-type(1){
+	transform: rotateZ(60deg);
+	-webkit-transform: rotateZ(60deg);
+}
+
+.sixangle>div:nth-of-type(2){
+	transform: rotateZ(-60deg);
+	-webkit-transform: rotateZ(-60deg);
+}
+
+.sixangle>div:before{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	content: " ";
+	background: inherit;
 	display: block;
+	transform-origin:center center;
+	-webkit-transform-origin:center center;
 }
-.sixangle>a>div:nth-child(1){
-	width:0px;
-	border-left:86px solid transparent;
-	border-right:86px solid transparent;
-	border-bottom:50px solid #b1c0bc;
+
+.sixangle>div:nth-of-type(1):before{
+	transform: rotateZ(-60deg) translate(36.5px, -36.5px);
+	-webkit-transform: rotateZ(-60deg) translate(36.5px, -36.5px);
 }
-.sixangle>a>div:nth-child(2){
-	width:172px;
-	height:100px;
-	background-color:#b1c0bc;
-	text-align: center;
-	vertical-align: middle;
-	color: #fff;
-	line-height: 100px;
-	font-size: 2.5rem;
+.sixangle>div:nth-of-type(2):before{
+	transform: rotateZ(60deg) translate(-50px, -13.5px);
+	-webkit-transform: rotateZ(60deg) translate(-50px, -13.5px);
 }
-.sixangle>a>div:nth-child(3){
-	width:0px;
-	border-left:86px solid transparent;
-	border-right:86px solid transparent;
-	border-top:50px solid #b1c0bc;
+.sixangle>a{
+	width: inherit;
+	height: inherit;
+	display: block;
+	position: absolute;
+	z-index: 1;
 }
-.sixangle>a:hover>div:nth-child(1){
-	border-bottom-color:#646760;
-}
-.sixangle>a:hover>div:nth-child(2){
-	background-color: #646760;
-}
-.sixangle>a:hover>div:nth-child(3){
-	border-top-color:#646760;
+.sixangle:hover{
+	-webkit-animation-name: beat;
+	animation-name: beat;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
 }
 </style>
 </head>
@@ -197,23 +230,17 @@ section>section::before{
 	<div class="main">
 
 	<div class="sixangle">
-	<a href="./blog">
+	<a href="./blog"></a>
 	<div></div>
-	<div>BLOG</div>
 	<div></div>
-	</a>
 	</div><div class="sixangle">
-	<a href="#">
+	<a href="#"></a>
 	<div></div>
-	<div>手工墙</div>
 	<div></div>
-	</a>
 	</div><div class="sixangle">
-	<a href="#">
+	<a href="#"></a>
 	<div></div>
-	<div>杂物堆</div>
 	<div></div>
-	</a>
 	</div>
 
 	</div>
