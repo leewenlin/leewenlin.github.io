@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=medium-dpi">
+<meta name="baidu-site-verification" content="lnqiNjoNrY" />
+<title>六边形的一种画法</title>
+<style type="text/css" >
+body{
+	text-align: center;
+	padding-top: 100px;
+	background: #ebede1;
+}
+.sixangle{
+	width: 173px;
+	height: 100px;
+	display: inline-block;
+	background-color: #555;
+	background-size: 200px auto;
+	margin-top: 60px;
+	background-position:center;
+	margin-left: 10px; 
+	margin-right: 10px; 
+	margin-bottom: 50px;
+}
+.sixangle:nth-of-type(1).sixangle{
+	background-image: url("../img/zongshi.gif");
+}
+.sixangle:nth-of-type(2).sixangle{
+	background-image: url("../img/diy.jpg");
+}
+.sixangle:nth-of-type(3).sixangle{
+	background-image: url("../img/pandada.jpg");
+}
+.sixangle>div{
+	overflow: hidden;
+	background: inherit;
+	position: absolute;
+	width: 173px;
+	height: 100px;
+	background:inherit;
+}
+
+.sixangle>div:nth-of-type(1){
+	transform: rotateZ(60deg);
+	-webkit-transform: rotateZ(60deg);
+}
+
+.sixangle>div:nth-of-type(2){
+	transform: rotateZ(-60deg);
+	-webkit-transform: rotateZ(-60deg);
+}
+
+.sixangle>div:before{
+	height: 200px;
+	width: 200px;
+	content: " ";
+	background: inherit;
+	display: block;
+	transform-origin:center center;
+	-webkit-transform-origin:center center;
+}
+
+.sixangle>div:nth-of-type(1):before{
+	transform: rotateZ(-60deg) translate(36.5px, -37px);
+	-webkit-transform: rotateZ(-60deg) translate(36.5px, -37px);
+}
+.sixangle>div:nth-of-type(2):before{
+	transform: rotateZ(60deg) translate(-50px, -13.5px);
+	-webkit-transform: rotateZ(60deg) translate(-50px, -13.5px);
+}
+.sixangle>a{
+	width: inherit;
+	height: inherit;
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+</style>
+</head>
+<body>
+<div class="sixangle">
+	<a href="#"></a>
+	<div></div>
+	<div></div>
+</div>
+<div class="sixangle">
+	<a href="#"></a>
+	<div></div>
+	<div></div>
+</div>
+<div class="sixangle">
+	<a href="#"></a>
+	<div></div>
+	<div></div>
+</div>
+</body>
+</html>

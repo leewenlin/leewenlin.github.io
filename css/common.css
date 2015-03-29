@@ -218,8 +218,7 @@
       }
   }
 
-  @-webkit-keyframes rotate{
-
+  @-webkit-keyframes logoturn{
       0%{
         -webkit-transform: rotateY(0deg);
       }
@@ -233,8 +232,7 @@
       }
   }
 
-  @keyframes rotate{
-
+  @keyframes logoturn{
       0%{
         transform: rotateY(0deg)
       }

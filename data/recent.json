@@ -1,0 +1,28 @@
+{
+	"blog":[
+	[
+	"万网企业邮箱域名解析不生效的原因",
+	"./blog/%E4%B8%87%E7%BD%91%E4%BC%81%E4%B8%9A%E9%82%AE%E7%AE%B1%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E5%8E%9F%E5%9B%A0.html"],
+	[
+	"翻译XSD文件小脚本",
+	"./blog/%E7%BF%BB%E8%AF%91XSD%E6%96%87%E4%BB%B6%E5%B0%8F%E8%84%9A%E6%9C%AC.html"
+	]
+	],
+	"diy":[
+
+	],
+	"more":[
+	[
+	"一个div画图-美队盾牌",
+	"./html/meidui.html"
+	],
+	[
+	"一个div画图-panda",
+	"./html/panda.html"
+	],
+	[
+	"正六边形的一种画法",
+	"./html/sixangle.html"
+	]
+	]
+}
