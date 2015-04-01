@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=medium-dpi">
 <meta name="baidu-site-verification" content="lnqiNjoNrY" />
 <title>Panda的小黑屋</title>
 <link rel="stylesheet" href="./css/common.css">
@@ -9,8 +10,7 @@
 body{
 	background-color: #8fbab6;
 	font-family: "Microsoft Yahei",arial;
-	text-align: center;
-	vertical-align: middle;
+
 }
 ul{
 	padding: 0px;
@@ -20,7 +20,6 @@ ul{
 .content{
 	margin: 100px auto;
 	width: 1000px;
-	position: relative;
 }
 .head{
 	position: absolute;
@@ -76,11 +75,13 @@ ul{
 	min-height: 300px;
 	background-color: #b1c0bc;
 	border: 10px solid #ebede1;
-	position: absolute;
+	position: relative;
 	color: #ebede1;
 	font-size: 14px;
 	border-radius: 20px 20px 20px 20px;
 	padding-top: 20px;
+	text-align: center;
+	vertical-align: middle;
 }
 .head>ul>li>ul{
 	position: absolute;
@@ -112,14 +113,8 @@ ul{
 	vertical-align:middle;
 }
 .logo:hover{
-	-webkit-animation-name: beat;
-	animation-name: beat;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-delay: 0s;
-	animation-delay: 0s;
-	-webkit-animation-iteration-count:infinite;
-	animation-iteration-count:infinite;
+	animation:logoturn 3s infinite;
+	-webkit-animation:logoturn 3s infinite;
 }
 *{
 	padding: 0px;
@@ -128,36 +123,66 @@ ul{
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;	
 }
-a{
-	text-decoration:none;
+.main li>a{
+	
 	color: #8fbab6;
 }
-
+a{
+	text-decoration:none;
+}
+.list{
+	color: #ebede1;
+	background: #a0c3be;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+.list a{
+	color: #ebede1;
+}
+.list ul{
+	padding-left: 30px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 2px dashed #99b7af;
+}
+.list ul:first-child{
+	padding-top: 20px;
+}
+.list ul:last-child{
+	padding-bottom: 20px;
+	border:0px;
+}
+.list li{
+	margin-left: 20px;
+	padding: 4px 0;
+}
+.list a:before{
+	content: "●";
+	margin-right: 5px;
+}
 h1{
 	display: inline;
 	color: #ebede1;
 }
-
+.list li:hover{
+	background: #aecbc5;
+}
 
 </style>
 </head>
 <body>
 <div class="content">
 	<div class="main">
-		<img class="logo"/><h1>Panda的小黑屋</h1>
+		<img class="logo"/><h1>Panda的杂物堆</h1>
 		<div class="head">
 			<ul >
 				<li>
-					<a href="#">首页</a>
+					<a href="./index.html">首页</a>
 				</li>
 				<li>
 					<a href="./blog/" target="_blank">博客</a>
 				</li>
 				<li>其他
-					<ul>
-						<li><a href="./html/index.html" target="_blank">美队盾牌</a></li>
-						<li><a href="./html/panda.html" target="_blank">panda</a></li>
-					</ul>
 				</li>
 				<li>
 					<a href="./blog/about" target="_blank">关于我</a>
@@ -166,6 +191,18 @@ h1{
 			</ul>
 		</div>
 	</div>
+<div class="list">
+	<ul><b>一个div画图</b>
+		<li><a href="./html/index.html" target="_blank">美队盾牌</a></li>
+		<li><a href="./html/panda.html" target="_blank">panda</a></li>
+	</ul>
+	<ul><b>CSS画图</b>
+		<li><a href="./html/sixangle.html" target="_blank">正六边形的一种画法</a></li>
+	</ul>
+	<ul><b>小游戏</b>
+		<li><a href="./html/index.html" target="_blank">=====</a></li>
+	</ul>
+</div>	
 </div> 
 </body>
 </html>
