@@ -187,8 +187,8 @@ body>div:first-of-type{
 	color: #fff;
 	-webkit-animation-name: swing;
   animation-name: swing;
-  -webkit-animation-duration: 1s;
- 	animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+ 	animation-duration: 3s;
 }
 .paper{
 	overflow: hidden;
@@ -346,8 +346,14 @@ footer{
 	.logo~section{
 		margin-left: 2rem;
 	}
+	.about-section{
+		height: 35rem;
+	}
 	.paper~.paper{
 	margin-left: 2rem;
+	}
+	.paper{
+		margin-top: 6rem;
 	}
 	.title{
 		margin: auto;
@@ -356,6 +362,9 @@ footer{
 @media (min-width: 1921px){
 	.logo~section{
 		margin-left: 2rem;
+	}
+	.about-section{
+		height: 40rem;
 	}
 	html{
 		font-size:80%;
