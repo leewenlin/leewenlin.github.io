@@ -38,12 +38,6 @@ a{
 a:visited{
 	color: #555;
 }
-body>div:first-of-type{
-	position: relative;
-	min-height: 100%;
-	height: auto !important;
-	margin: 0 auto -3rem;
-}
 .about-section{
 	padding: 1rem;
 	position: relative;
@@ -51,7 +45,7 @@ body>div:first-of-type{
 	background-image: url("../img/bk1.png");
 	vertical-align: middle;
 	min-height: 32rem;
-	height: auto;
+	height: 38%;
 	overflow: hidden;
 	width: 100%;
 }
@@ -116,8 +110,8 @@ body>div:first-of-type{
 }
 
 .main-section{
-	overflow: hidden;
-	margin-bottom: 1rem;
+	padding-top: 1rem;
+	width: 100%;
 }
 .main-section .main{
 	min-height: 30rem;
@@ -243,6 +237,7 @@ audio{
 	position:fixed;
 	bottom:1rem;
 	right:0;
+	z-index: 10;
 }
 .bgm{
 	padding: 0.4rem 1rem;
@@ -252,6 +247,7 @@ audio{
 	right:0;
 	color: #fff;
 	border-radius: 0.5rem;
+	z-index: 9;
 }
 .bgm:hover+audio{
 	display: block;
@@ -261,11 +257,10 @@ audio:hover{
 }
 
 footer{
-	position: relative;
-	margin:auto auto 0 auto;
+	margin-top: 2rem;
+	bottom: 0.5rem;
 	text-align: center;
-	height: 2rem;
-	line-height: 2rem;
+	width: 100%;
 }
 
 @media (max-width: 599px){
@@ -347,7 +342,7 @@ footer{
 		margin-left: 2rem;
 	}
 	.about-section{
-		height: 35rem;
+		/*height: 35rem;*/
 	}
 	.paper~.paper{
 	margin-left: 2rem;
@@ -364,12 +359,22 @@ footer{
 		margin-left: 2rem;
 	}
 	.about-section{
-		height: 40rem;
+		/*height: 40rem;*/
 	}
 	html{
 		font-size:80%;
 	}
 	.paper~.paper{
 	margin-left: 2rem;
+	}
+}
+@media (max-height: 799px){
+	footer{
+		position: static;
+	}
+}
+@media (min-height: 800px){
+	footer{
+		position: absolute;
 	}
 }
