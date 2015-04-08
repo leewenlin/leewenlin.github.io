@@ -12,7 +12,7 @@ html{
 	height: 100%;
 }
 body{
-	font-family: "Microsoft Yahei",arial;
+	font-family: "Microsoft Yahei",'Comic Sans MS', cursive, sans-serif;
 	font-size: 1.4rem;
 	height:100%;
 	background: #fcffed;
@@ -147,22 +147,24 @@ a:visited{
 }
 .part:before{
 	content: "●";
-	line-height: 4rem;
+	text-shadow:2px 0px 3px rgba(0,0,0,0.2),3px 0px 5px rgba(0,0,0,0.1);
+	height: 7rem;
+	line-height: 6rem;
+	vertical-align: middle;
 	color: #e6eedd;
 	font-size: 6rem;
 	position: absolute;
-	bottom: 0;
-	margin-bottom: 2rem;
 	left:-2rem;
 }
 .part:after{
 	content: "●";
-	line-height: 4rem;
+	text-shadow:-2px 0px 3px rgba(0,0,0,0.2),-3px 0px 5px rgba(0,0,0,0.1);
+	height: 7rem;
+	line-height: 6rem;
+	vertical-align: middle;
 	color: #e6eedd;
 	font-size: 6rem;
 	position: absolute;
-	bottom: 0;
-	margin-bottom: 2rem;
 	right:-2rem;
 }
 .part:hover{
