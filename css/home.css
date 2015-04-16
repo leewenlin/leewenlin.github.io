@@ -133,7 +133,7 @@ a:visited{
 	font-size: 3rem;
 	line-height: 7rem;
 	color: #ebede1;
-	margin: 2rem 2rem 1rem 2rem;
+	margin: 2rem auto 1.2rem;
 	display: inline-block;
 }
 .paper:first-of-type>.part{
