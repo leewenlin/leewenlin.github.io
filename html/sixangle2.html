@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=medium-dpi">
+<meta name="baidu-site-verification" content="lnqiNjoNrY" />
+<title>正六边形的另外两种画法</title>
+<style type="text/css" >
+body{
+	text-align: center;
+	padding-top: 100px;
+	background: #ebede1;
+
+}
+.sixangle{
+	width: 173px;
+	height: 100px;
+	display: inline-block;
+	background-color: #80ccc5;
+	position: relative;
+	vertical-align:middle;
+}
+.sixangle:after{
+	position: absolute;
+	left: 0px;
+	bottom: -50px;
+	content: " ";
+	width: 0px;
+	height: 0px;
+	border-left:86.5px solid transparent; 
+	border-right:86.5px solid transparent; 
+	border-top:50px solid #80ccc5;
+}
+.sixangle:before{
+	position: absolute;
+	left: 0px;
+	top: -50px;
+	content: " ";
+	width: 0px;
+	height: 0px;
+	border-left:86.5px solid transparent; 
+	border-right:86.5px solid transparent; 
+	border-bottom:50px solid #80ccc5;
+}
+.sixangle2{
+	width: 173px;
+	height: 100px;
+	display: inline-block;
+	background-color: #80ccc5;
+	position: relative;
+	margin-top: 100px;
+	vertical-align:middle;
+}
+.sixangle2:before{
+	content: " ";
+	position: absolute;
+	top: -50px;
+	left: 0px;
+	width: 0.5px;
+	height: 100px;
+	border-left: none;
+	border-right:86.5px solid #80ccc5; 
+	border-bottom:50px solid transparent;
+	border-top:50px solid transparent;
+	z-index: -1;
+}
+.sixangle2:after{
+	content: " ";
+	position: absolute;
+	top: -50px;
+	right: 0px;
+	width: 0.5px;
+	height: 100px;
+	border-right: none;
+	border-left:86.5px solid #80ccc5; 
+	border-bottom:50px solid transparent;
+	border-top:50px solid transparent;
+	z-index: -1;
+}
+</style>
+</head>
+<body>
+<div class="sixangle">第一种：
+	两个三角形+一个长方形
+</div>
+<div class="sixangle"> 
+</div>
+<div class="sixangle"> 
+</div><br><div class="sixangle2">第二种：两个梯形
+</div>
+<div class="sixangle2"> 
+</div>
+<div class="sixangle2"> 
+</div>
+</body>
+</html>

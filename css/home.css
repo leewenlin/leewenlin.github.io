@@ -1,6 +1,6 @@
 html{
 	font-size: 62.5%;
-	font-size: 10px;
+	-webkit-text-size-adjust: 100%;
 }
 *{
 	padding: 0px;
@@ -267,6 +267,7 @@ footer{
 	text-align: center;
 	width: 100%;
 }
+
 
 @media (max-width: 599px){
 	.col3 p{
