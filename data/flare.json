@@ -1,0 +1,110 @@
+{
+    "name": "flare", 
+    "children": [
+        {
+            "name": "前端", 
+            "children": [
+                {
+                    "name": "HTML", 
+                    "size": 150
+                }, 
+                {
+                    "name": "CSS", 
+                    "size": 200
+                }, 
+                {
+                    "name": "JavaScript", 
+                    "size": 175
+                }, 
+                {
+                    "name": "jQuery", 
+                    "size": 150
+                }, 
+                {
+                    "name": "AJAX", 
+                    "size": 150
+                }, 
+                {
+                    "name": "json", 
+                    "size": 200
+                }, 
+                {
+                    "name": "jsonp", 
+                    "size": 175
+                }, 
+                {
+                    "name": "art-template", 
+                    "size": 150
+                }
+            ]
+        }, 
+        {
+            "name": "后台", 
+            "children": [
+                {
+                    "name": "JAVA", 
+                    "children": [
+                        {
+                            "name": "JAVA", 
+                            "size": 150
+                        }, 
+                        {
+                            "name": "SPRING", 
+                            "size": 200
+                        }, 
+                        {
+                            "name": "SRTUTS", 
+                            "size": 175
+                        }, 
+                        {
+                            "name": "SPRING MVC", 
+                            "size": 150
+                        }, 
+                        {
+                            "name": "HIBERNATE", 
+                            "size": 200
+                        }
+                    ]
+                }, 
+                {
+                    "name": "php", 
+                    "children": [
+                        {
+                            "name": "thinkphp", 
+                            "size": 175
+                        }, 
+                        {
+                            "name": "wordpress", 
+                            "size": 150
+                        }
+                    ]
+                }, 
+                {
+                    "name": "ORACLE", 
+                    "size": 175
+                }, 
+                {
+                    "name": "LINUX", 
+                    "size": 150
+                }
+            ]
+        }, 
+        {
+            "name": "产品", 
+            "children": [
+                {
+                    "name": "AXURE", 
+                    "size": 150
+                }, 
+                {
+                    "name": "沟通", 
+                    "size": 200
+                }, 
+                {
+                    "name": "SRTUTS", 
+                    "size": 175
+                }
+            ]
+        }
+    ]
+}
