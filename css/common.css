@@ -221,7 +221,8 @@
   @-webkit-keyframes logoturn{
       0%{
         -webkit-transform: rotateY(0deg);
-
+        background: url("../img/panda.png") no-repeat;
+        background-size: 100%;
       }
       50%{
         -webkit-transform: rotateY(180deg);
@@ -236,7 +237,6 @@
       }
       50%{
         transform: rotateY(180deg);
-        background: url("../img/panda1.png") no-repeat;
-        background-size: 100%;
+      }
       }
   }
