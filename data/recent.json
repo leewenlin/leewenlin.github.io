@@ -1,6 +1,10 @@
 {
 	"blog":[
 	[
+	"php中调用Python的N种方法",
+	"./blog/php中调用Python的N种方法.html"
+	],
+	[
 	"css中遇到的问题小结(一)",
 	"./blog/css中遇到的问题小结(一).html"
 	],
