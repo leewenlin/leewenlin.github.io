@@ -1,20 +1,12 @@
 {
 	"blog":[
 	[
-	"php中调用Python的N种方法",
-	"./blog/php中调用Python的N种方法.html"
-	],
-	[
 	"css中遇到的问题小结(一)",
 	"./blog/css中遇到的问题小结(一).html"
 	],
 	[
 	"万网企业邮箱域名解析不生效的原因",
 	"./blog/万网企业邮箱域名解析不生效的原因.html"
-	],
-	[
-	"git回滚被覆盖的本地文件",
-	"./blog/git回滚被覆盖的本地文件.html"
 	],
 	[
 	"翻译XSD文件的Python小脚本",
