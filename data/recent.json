@@ -1,5 +1,8 @@
 {
 	"blog":[
+	["记一下踩过的thinkcmf同时连mssql和mysql的坑",
+	 "./blog/记一下踩过的thinkcmf同时连mssql和mysql的坑.html"
+	],
 	[
 	"总结一下最近写的爬武汉房地产网站的爬虫",
 	"./blog/总结一下最近写的爬武汉房地产网站的爬虫.html"
